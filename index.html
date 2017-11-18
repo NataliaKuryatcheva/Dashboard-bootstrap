@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>new project</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row main-content">
+			<div class="left-menu col-md-1">
+				<ul>
+					<li>
+						<a href=""><img src="images/logo.jpg" alt="logo"></a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/dashboard.png" alt=""></a>
+						<a href="" class="link first">Dashboard</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/analytics.jpg" alt=""></a>
+						<a href="" class="link">Analytics</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/media.jpg" alt=""></a>
+						<a href="" class="link">Media</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/comments.jpg" alt=""></a>
+						<a href="" class="link comments">Comments</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/widgets.jpg" alt=""></a>
+						<a href="" class="link">Widgets</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/planner.jpg" alt=""></a>
+						<a href="" class="link">Planner</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/reports.jpg" alt=""></a>
+						<a href="" class="link">Reports</a>
+					</li>
+					<li>
+						<a href="" class="image"><img src="images/directions.jpg" alt=""></a>
+						<a href="" class="link last">Directions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right-content col-md-11">
+				<header class="top-menu">
+					<div class="col-md-4">
+						<form action="" method="post" class="search">
+							<input type="search" name="" placeholder="Search" class="input" />
+							<input type="submit" name="" value="" class="submit" />
+						</form>
+					</div>
+					<div class="col-md-6 user">
+						<img src="images/user_image.jpg" alt="user_image">
+						<p class="welcome">Welcome, Asif Aleem</p>
+						<a href=""><span class="glyphicon glyphicon-envelope"></a>
+						<a href=""><span class="glyphicon glyphicon-bell"></a>
+						<a href=""><span class="glyphicon glyphicon-cog"></a>
+					</div>
+					<div class="col-md-2 logout">
+						<input type="submit" class="button right" value="LOGOUT">
+					</div>
+				</header>
+				<div class="row center-content">
+					<div class="content col-md-9 center-part">
+
+						<!-- ******************************************************************-->
+					
+						<div class="chart-container">
+							<canvas id="line-chartcanvas" height="100"></canvas>
+						</div>
+
+						<!-- ******************************************************************-->					
+						<div class="col-md-12 activity">
+							<p class="left">Reсent Activity</p>
+							<p class="right"><a href="">See all <span>&#62;</span></a></p>
+						</div>
+						<div class="col-md-12 center-part-bottom">
+							<ul>
+								<li>
+									<span class="name">Green Dot POS Money Load</span>
+									<span class="description">Funds loaded through Green Dot load network.</span>
+									<span class="right price green">$834.19</span>
+									<span class="right date">01/09/13</span>
+								</li>
+								<li>
+									<span class="name">POS Signature Purchase</span>
+									<span class="description description2">SMOKERS WORLD II, LAS VEGAS, NV, USA </span>
+									<span class="right price red">$450.39</span>
+									<span class="right date">01/07/13</span>
+								</li>
+								<li>
+									<span class="name">Load Money</span>
+									<span class="description description3">Funds Transfered From Bank Acount *5075</span>
+									<span class="right price green">$188.17</span>
+									<span class="right date">01/05/13</span>
+								</li>
+								<li>
+									<span class="name">POS Signature Purchase</span>
+									<span class="description description2">VONS STORE 2511, HENDERSON, NV, USA </span>
+									<span class="right price red">$7.19</span>
+									<span class="right date">01/09/13</span>
+								</li>
+								<li>
+									<span class="name">Load Money</span>
+									<span class="description description3">Funds Transfered From Bank Acount *5075</span>
+									<span class="right price green">$188.17</span>
+									<span class="right date">01/05/13</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="widgets col-md-3">
+						<div class="col-md-12 balance">
+							<p class="balance">Balance</p>
+							<h2 class="balance">$14,679</h2>
+							<img src="images/activity_balance.jpg" alt="balance">
+						</div>
+						<div class="col-md-12 links">
+							<p class="links">Quick Links</p>
+							<a href="" class="links first">New Tasks <span class="glyphicon glyphicon-bookmark right"></span></a>
+							<a href="" class="links">Activity <span class="glyphicon glyphicon-globe right"></span></a>
+							<a href="" class="links">Parameters <span class="glyphicon glyphicon-cog right"></span></a>
+							<a href="" class="links">My Cards <span class="glyphicon glyphicon-credit-card right"></span></a>
+							<a href="" class="links">Users <span class="glyphicon glyphicon-user right"></a>
+						</div>
+						<div class="col-md-12 support">
+							<p class="support">Customer Support</p>
+							<form action="" class="support" method="get">
+								<input type="text" name="name" placeholder="Name">
+								<input type="email" name="email" placeholder="Email">
+								<input type="text" name="comments" class="comment" placeholder="Comments">
+								<input type="submit" class="button right" value="Send">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/line.js"></script>
+</body>
+</html>

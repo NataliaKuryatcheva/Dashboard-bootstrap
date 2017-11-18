@@ -1,0 +1,330 @@
+a {
+	color: #aaaaaa;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.right {float: right;}
+
+.left {float: left;}
+
+.green {color: #71ad49;}
+
+.red {color: #dd4343;}
+
+
+/* Search */
+
+body {
+	background: url(images/background.png);
+}
+
+.search {
+	/* устанавливаем необходимую ширину формы в зависимости от дизайна
+	** форма без проблем растягивается */
+	width: 100%;
+
+	/* кнопку отправки будем позиционировать абсолютно,
+	** поэтому необходимо это свойство */
+	position: relative;
+	display: inline-block;
+}
+
+.search input {
+	/* отключаем бордюры у инпутов */
+	border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+	/* растягиваем поле ввода на всю ширину формы */
+	width: 100%;
+
+	/* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+	** регулируем высоту формы
+	** внутренний отступ справа (37px) делаем больше левого,
+	** т.к. там будет размещена кнопка отправки	*/
+	padding: 18px 37px 18px 20px;
+
+	/* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* добавляем внутренние тени */
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+	/* закругляем углы */
+	border-radius: 10px;
+
+	background: #fff;
+	font: 16px Tahoma, Arial, sans-serif;
+	color: #555;
+	outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+	background: #fefbfb;
+	color: #333;
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+	/* позиционируем кнопку абсолютно от правого края формы */
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 37px;
+
+	/* растягиваем кнопку на всю высоту формы */
+	height: 100%;
+
+	cursor: pointer;
+	background: url(images/search.png) 50% no-repeat;
+
+	/* добавляем прозрачность кнопке отправки */
+	opacity: 0.8.;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+	opacity: 0.8;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+/* End Search */
+
+.main-content {
+	margin-top: 40px;
+}
+
+.left-menu.col-md-1 {
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px 0px 0px 0px;
+}
+
+.left-menu.col-md-1 li {
+	margin-bottom: 41.85px;
+	margin-left: -10px;
+}
+
+.left-menu.col-md-1 a.link {
+	margin: 0 10px 0 -10px;
+	color: #aaa;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.left-menu.col-md-1 a.link.first { margin-left: -20px; }
+.left-menu.col-md-1 a.link.comments { margin-left: -18px; }
+.left-menu.col-md-1 a.link.last { margin-left: -15px; }
+
+.top-menu .col-md-6 {
+	display: -webkit-inline-box;
+	background: #fff;
+	position: relative;
+	padding: 9px 0 9px 15px;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	font: 16px Tahoma, Arial, sans-serif;
+	color: #555;
+	outline: none;
+	height: 56px;
+}
+
+.col-md-6.user img {
+	margin-right: 20px;
+}
+
+.col-md-6.user p, .col-md-6.user a>span {
+    margin-top: 10px;
+}
+
+.col-md-6.user a>span {
+	color: #888;
+	margin-left: 40px;
+}
+
+.col-md-2 .button {
+	border-radius: 10px;
+	background: #c9452b;
+	padding: 14px 34px 10px 38px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 17px;
+	height: 56px;
+}
+
+.col-md-9.center-part {
+	padding-left: 31px;
+	padding-top: 20px;
+	padding-right: 28px;
+	border-radius: 0 0 10px 10px;
+}
+
+.chart-container {
+	height: 250px;
+	background: #504b41;
+}
+
+.col-md-12.activity, .col-md-12.activity a {
+	text-decoration: none;
+	color: #d3cabb;
+	font-weight: bold;
+	background: #767066;
+}
+
+.col-md-12.center-part-bottom {
+	background: #fff;
+	height: 427px;
+}
+
+.col-md-12.center-part-bottom li {
+	width: 110.5%;
+	height: 85.4px;
+	margin-left: -55px;
+	padding: 24px 20px 0 20px;
+	border-bottom: 1px solid #333;
+}
+
+.col-md-12.center-part-bottom li:last-child {
+	border-bottom: none;
+}
+
+.name {
+	float: left;
+	font-weight: bold;
+	position: relative;
+	padding-right: 15px;
+}
+
+.description {
+	left: -200px;
+	color: #999;
+	font-weight: bold;
+	font-size: 13px;
+	position: relative;
+	top: 20px;
+}
+.description2 {left: -181px;}
+.description3 {left: -95px;}
+
+.price {
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	font-size: 18px;
+}
+
+.date {
+	color: #999;
+	font-size: 13px;
+	position: relative;
+	margin-right: -65px;
+	height: 18px;
+	top: 23px;
+}
+
+.widgets a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.col-md-12.balance {
+	background: #638e43;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+p.balance {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.col-md-12.balance img {
+	margin-left: 140px;
+	margin-top: -85px;
+}
+
+.col-md-12.links {
+	height: 272px;
+	border-radius: 10px;
+	display: grid;
+	background: #fff;
+	margin-top: 20px;
+}
+
+p.links {
+	width: 116%;
+	margin-left: -8%;
+	background: #7d7d7d;
+	border-radius: 10px 10px 0 0;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 10px;
+	color: #fff;
+}
+
+a.links {
+	border-bottom: 1px solid #7d7d7d;
+	width: 115%;
+	text-decoration: none;
+	color: #aaa;
+	height: 35px;
+	margin-left: -7.5%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a.links:last-child { 
+	border-bottom: none;
+	height: 20px;
+}
+
+.col-md-12.support {
+	height: 275px;
+	border-radius: 10px;
+	display: grid;
+	background: #fff;
+	margin-top: 20px;
+}
+
+p.support {
+	width: 115%;
+	margin-left: -7.5%;
+	background: #d77b31;
+	border-radius: 10px 10px 0 0;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 10px;
+	color: #fff;
+}
+
+.col-md-12.support input {
+	height: 35px;
+	padding: 0px 0 0px 15px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.col-md-12.support .button {
+	width: 73px;
+	padding: 0;
+	border-radius: 10px;
+	background: #d77b31;
+	color: #fff;
+}
